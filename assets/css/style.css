@@ -1,0 +1,403 @@
+body{
+	font-family: arial;
+	background-image: url('../images/lego-star-wars-tfa-box-art.jpg');
+}
+h1{
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 50px;
+	/*display: inline;*/
+	color:red;
+	text-align: center;
+}
+h3{
+	font-size: 20px;
+	width: 126px;
+}
+img{
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+}
+header{
+	color: yellow;
+	font-size: 40px;
+	font-weight: bold;
+	font-family: 'Bungee Shade', cursive;
+	text-align: center;
+	margin: 50px;
+}
+.enemy{
+	float: left;
+	border : 2px solid black;
+	font-family: arial;
+	font-size: 20px;
+	text-align: center;
+	width: 170px;
+	/*height: 200px;*/
+	background: red;
+}
+.img{
+	float: left;
+	padding: 15px;
+	font-family: arial;
+	font-size: 20px;
+	text-align: center;
+	border : 2px solid green;
+	/*margin-bottom:20px;*/
+}
+
+.containerDiv{
+	width: 800px; 
+	height:500px; 
+	background: black; 
+	border: 2px solid red;
+	top: 50px;
+	margin:auto;
+	position: relative;
+	background-image: url('../images/SW-Background.jpg');
+
+}
+
+.imgContainer{
+	width: 100%;
+	height: 300px;
+	margin:75px;
+	color: white;
+	text-align: center;
+}
+.defender{
+	padding: 15px;
+	font-family: arial;
+	font-size: 20px;
+	text-align: center;
+	border : 2px solid green;
+	margin-top: 50px;
+	margin-bottom:20px;
+	background: black;
+	color: white;
+	max-width: 160px;
+	/*height: 200px;*/
+}
+
+.extremeRight{
+	position: absolute;
+	right: 0;
+}
+
+#enemyProgress{
+	bottom: 160px;
+}
+
+#fightSection{
+	margin-left: 110px;
+	margin-right: 100px;
+}
+
+.fightSection{
+	/*padding: 15px;*/
+	text-align: center;
+	margin-top: 100px;
+	margin-left: 75px;
+	/*margin-right: 100px;*/
+	color: white;
+}
+
+.enemyFightSection{
+	/*padding: 15px;*/
+	text-align: center;
+	margin-top: 80px;
+	margin-left: 90px;
+	color: white;
+	position: absolute;
+	right:140px;
+}
+
+.buttonLocal{
+	font-weight: bold;
+	font-size: 15px;
+	margin :50px;
+	position: absolute;
+	
+}
+
+.leftAlign{
+	float: left;
+}
+
+.nextButton{
+	background: green;
+	color: black;
+	width: 75px;
+	height: 40px;
+	border: 1px solid black;
+	float: right;
+	bottom: 50px;
+	right: 50px;
+}
+
+.attackButton{
+	background: green;
+	color: black;
+	width: 75px;
+	height: 40px;
+	border: 1px solid black;
+	float: right;
+	bottom: -50px;
+	right: 250px;
+}
+
+.resetButton{
+	background: red;
+	color: white;
+	width: 75px;
+	height: 40px;
+	border: 1px outset white;
+	float: right;
+	bottom: -50px;
+	right: 50px;
+}
+
+.getEnemyButton{
+	background: green;
+	color: black;
+	width: 200px;
+	height: 40px;
+	border: 1px outset black;
+	float: right;
+	bottom: -50px;
+	right: 150px;
+}
+
+.jumbotron{
+	background-image: url("../images/unnamed.png");
+	height: 150px;
+	/*background-repeat: no-repeat;*/
+}
+
+#score{
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	position: absolute;
+	bottom: 100px;
+	left:50px;
+	right:50px;
+	text-align: center;
+	margin:auto;
+}
+
+#scoreBoard{
+	font-size: 30px;
+	font-weight: bold;
+	color: green;
+	/*position: absolute;*/
+	/*bottom: 0px;*/
+	/*left:50%;*/
+	margin-top: 200px;
+	text-align: center;
+	margin:auto;
+}
+
+.invisible{
+	display: none;
+}
+
+#shooting {
+	    /*animation: shooting 0.45s alternate steps(2);*/
+	    display: block;
+	    width: 110px;
+	    height: 110px;
+	    background-image: url('../images/shooting1.png');
+	    background-repeat: no-repeat;
+  }
+
+  .shooting {
+	    animation: shooting 0.45s infinite steps(2);
+	}
+
+  @keyframes shooting {
+	  0% {
+	    background-position: 0 0; 
+	   }
+	  100% { 
+	    background-position: -185px 0px; 
+	   }
+
+   }
+
+   /*#shooting2 {
+	    /*animation: shootings 0.45s alternate steps(2);*/
+	   /* display: block;
+	    width: 110px;
+	    height: 120px;
+	    background-image: url('../images/shooting3.png');
+	    background-repeat: no-repeat;
+  }
+
+	.shooting2Class{
+		animation: shootings 0.45s alternate steps(2);
+	}
+  @keyframes shootings {
+	  0% {
+	    background-position: 0 0; 
+	   }
+	  100% { 
+	    background-position: -200px 0px; 
+	   }
+
+   }
+
+   #die {
+	    animation: ideal 1s alternate steps(7);
+	    display: block;
+	    width: 80px;
+	    height: 110px;
+	    background-image: url('../images/ideal.png');
+	    background-repeat: no-repeat;
+  }
+
+@keyframes ideal {
+	  0% {
+	    background-position: 0 0; 
+	   }
+	  100% { 
+	    background-position: -635px 0px; 
+	   }
+
+   }*/
+
+#shooting3 {
+	    /*animation: shotings 1.5s alternate steps(7);*/
+	    display: block;
+	    width: 110px;
+	    height: 100px;
+	    background-image: url('../images/testSprite.png');
+	    background-repeat: no-repeat;
+  }
+
+  @keyframes shotings {
+  0% {
+    background-position: 0 0; 
+   }
+  100% { 
+    background-position: -850px 0px; 
+   }
+
+   }
+
+.shooting3Class{
+	animation: shotings 1.5s alternate steps(7);
+}
+
+#enemyShooting {
+	    
+	    display: block;
+	    width: 100px;
+	    height: 120px;
+	    background-image: url('../images/enemy.png');
+	    background-repeat: no-repeat;
+  }
+
+  .enemyShooting{
+	animation: enemy 1.5s alternate steps(4);
+  }
+
+  @keyframes enemy {
+  0% {
+    background-position: 0 0; 
+    width: 100px;
+   }
+	
+  100% { 
+    background-position: -550px 0px; 
+    width: 120px;
+   }
+
+   }
+
+ #fire{
+	right:200px;margin-top: 110px;
+ }  
+
+ #enemyDiv{
+ 	position: relative;
+ }
+
+.fireClass{
+	animation: fire .15s alternate;
+	/*transform: translateX(-400px) 1s ease-out;*/
+	animation-delay: .15s;
+	background-image: url('../images/fire.png');
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	float: left;
+
+}
+	@keyframes fire {
+		0%{
+			transform: translateX(0%);
+		}
+		100%{
+			transform: translateX(-120px);
+		}
+		
+  }
+
+  .charFire{
+	animation: charfire .15s alternate;
+	/*transform: translateX(-400px) 1s ease-out;*/
+	animation-delay: .15s;
+	background-image: url('../images/charFire.png');
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin-top: 120px;
+	margin-left: 0px;
+
+}
+	@keyframes charfire {
+		0%{
+			transform: translateX(0%);
+		}
+		100%{
+			transform: translateX(120px);
+		}
+		
+  }
+
+  #myProgress{
+  	position: absolute; 
+  	bottom: 160px;
+  }
+
+  .myProgress {
+  width: 160px;
+  background-color: #ddd;
+  border: .05px outset #ddd;
+  border-radius: 3px;
+}
+
+#myBar {
+  width: 100%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  border: .05px outset #4CAF50;
+  border-radius: 3px;
+}
+
+#enemyBar {
+  width: 100%;
+  height: 30px;
+  background-color: red;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  border: .05px outset red;
+  border-radius: 3px;
+}

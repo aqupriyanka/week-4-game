@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Star War RPG Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+	<!-- <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<body onload="getData();">
+	<header style="">Star Wars RPG Game!</header>
+
+	<div class="containerDiv">
+		<div id="characterScreen">
+			<h1>Choose Your Character</h1>
+			<div id="yourChar" class="imgContainer" >
+				<div id="char1Div" class="img">
+					<h3 id="name1"></h3>
+					<img id="char1" src="assets/images/kenobi.jpg" value="char1">
+					<br><span id="healthPoint1"></span>
+				</div>
+				
+				<div id="char2Div" class="img">
+					<h3 id="name2"></h3>
+					<img id="char2" src="assets/images/skywalker.jpg" value="char2">
+					<br><span id="healthPoint2"></span>
+				</div>
+
+				<div id="char3Div" class="img">	
+					<h3 id="name3"></h3>
+					<img id="char3" src="assets/images/sidious.jpg" value="char3">
+					<br><span id="healthPoint3"></span>
+				</div>
+				
+				<div id="char4Div" class="img">
+					<h3 id="name4"></h3>
+					<img id="char4" src="assets/images/maul.png" value="char4">
+					<br><span id="healthPoint4"></span>
+				</div>
+			</div>
+
+			<button id="nextFromFirst" class="buttonLocal nextButton invisible">Next</button>
+		</div>
+		
+		<div id="enimiesScreen" class="invisible">
+			<h1>Pick Your Enemy for Attack</h1>
+			<div id="enemies" class="imgContainer">
+
+			<!-- <button id="nextFromSecond" class="nextButton invisible">Next</button> -->
+			</div>
+		</div>
+
+		<div id="defenderScreen" class="invisible">
+			<h1>Fight Section</h1>
+			<div>
+			<div id="yourCharToFight" class="leftAlign"></div>
+			<div id="myProgress" class="myProgress">
+  				<div id="myBar">100%</div>
+			</div>
+			
+			<div id="fightSection">
+				<div id="shooting3" class="fightSection leftAlign" >
+					</div>
+				<div id="charFire" class="charFire fightSection invisible leftAlign"></div>
+				
+				<div id="enemyDiv">	
+					<div id="fire" class="fightSection leftAlign"></div>
+					<div id="enemyShooting" class="enemyFightSection leftAlign" ></div>
+				</div>
+			</div>
+			
+			<div id="defender" class="leftAlign extremeRight">
+			
+			</div>
+			<div id="enemyProgress" class="myProgress extremeRight">
+  				<div id="enemyBar"></div>
+			</div>
+			<div>
+				<p id="score"></p>
+				<!-- <p id="scoreBoard"></p> -->
+			</div>
+			
+
+			<button type="button" id="attackButton" class="buttonLocal attackButton">Attack</button>
+			<!-- <button id="reset" class="buttonLocal resetButton invisible">Reset</button> -->
+			<button id="getEnemy" class="buttonLocal getEnemyButton invisible">Click Me To choose Another Enemy!!</button>
+			</div>
+		</div>
+
+		<div id="winnerScreen" class="invisible" style="margin: auto">
+			<p id="scoreBoard"></p>
+			<button id="reset" class="buttonLocal resetButton">Reset</button>
+		</div>
+	</div>
+
+
+	<!-- <div>
+		<h1>Your Character</h1>
+		<div id="yourChar" class="container" >
+			<div id="char1Div" class="img">
+				<h3 id="name1"></h3>
+				<img id="char1" src="assets/images/kenobi.jpg" value="char1">
+				<br><span id="healthPoint1"></span>
+			</div>
+			
+			<div id="char2Div" class="img">
+				<h3 id="name2"></h3>
+				<img id="char2" src="assets/images/skywalker.jpg" value="char2">
+				<br><span id="healthPoint2"></span>
+			</div>
+
+			<div id="char3Div" class="img">	
+				<h3 id="name3"></h3>
+				<img id="char3" src="assets/images/sidious.jpg" value="char3">
+				<br><span id="healthPoint3"></span>
+			</div>
+			
+			<div id="char4Div" class="img">
+				<h3 id="name4"></h3>
+				<img id="char4" src="assets/images/maul.png" value="char4">
+				<br><span id="healthPoint4"></span>
+			</div>
+		</div>
+	</div> -->
+	
+	<br>
+	<!-- <div >
+		<h1>Enemies Available to Attack</h1>
+		<div id="enemies" class="container">
+			
+		</div>
+	</div> -->
+
+	<!-- <div>
+		<h1>Fight Section</h1>
+		
+		<div id="shooting2" style="float: right;"></div><"\t">
+		<div id="die" style="float: right;display: none"></div><"\t">
+		<div id="shooting" style="float: right;"></div>
+		<button type="button" id="attackButton">Attack</button>
+	</div> -->
+
+	<!-- <div >
+		<h1>Defender</h1>
+		<div id="defender" class="container">
+			
+		</div>
+	</div>
+ -->
+	<div>
+		<p id="score"></p>
+		<p id="scoreBoard"></p>
+	</div>
+	<!-- <div id="resetDiv">
+		<button id="reset">Reset</button>
+	</div> -->
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>
