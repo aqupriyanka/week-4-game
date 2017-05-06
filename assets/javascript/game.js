@@ -270,10 +270,10 @@ $(document).on("click", "div.img", function(){
 		$("#score").html("");
 		$("#yourChar").html("");
         $("#yourChar").html('<div id="char1Div" class="img">'
-        	+'<h3 id="name1"></h3><img id="char1" src="assets/images/kenobi.jpg" value="char1">'
+        	+'<h3 id="name1"></h3><img id="char1" src="assets/images/kenobi1.jpg" value="char1">'
         	+'<br><span id="healthPoint1"></span></div>'
         	+'<div id="char2Div" class="img"><h3 id="name2"></h3>'
-        	+'<img id="char2" src="assets/images/skywalker.jpg" value="char2"><br>'
+        	+'<img id="char2" src="assets/images/skywalker1.jpg" value="char2"><br>'
         	+'<span id="healthPoint2"></span></div>'
         	+'<div id="char3Div" class="img"><h3 id="name3"></h3>'
         	+'<img id="char3" src="assets/images/sidious.jpg" value="char3"><br>'
