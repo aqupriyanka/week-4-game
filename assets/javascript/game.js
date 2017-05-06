@@ -122,7 +122,7 @@ $(document).on("click", "div.img", function(){
 		$("#enimiesScreen").hide();
 		$("#defenderScreen").show();
 		$("#enemyShooting").fadeIn();
-		$("#enemyBar").fadeIn();
+		$("#enemyProgress").fadeIn();
 		$("#enemyBar").css("width","100%");
 		$("#enemyBar").text("100%");
 		$("#attackButton").show();
@@ -170,7 +170,7 @@ $(document).on("click", "div.img", function(){
 			$("#defender .defender").fadeOut(1500,function(){
 				$("#defender .defender").remove();
 				$("#enemyShooting").fadeOut(1500);
-				$("#enemyBar").fadeOut(1500);
+				$("#enemyProgress").fadeOut();
 			});
 			
 			if($("#enemies .enemy").length != 0){
@@ -179,8 +179,8 @@ $(document).on("click", "div.img", function(){
 			else{
 				// $("#reset").show();
 				$("#scoreBoard").text("YOU WIN!!");
-				$("#defenderScreen").slideUp(1500,function(){
-					$("#winnerScreen").slideDown(1500);
+				$("#defenderScreen").slideUp(1000,function(){
+					$("#winnerScreen").slideDown(1000);
 				});
 				
 				
